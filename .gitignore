@@ -24,3 +24,6 @@ automation/tmp/
 
 # cache Python
 __pycache__/
+
+# note private (NON pubblicare)
+NOTE_PRIVATE.md
