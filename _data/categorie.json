@@ -1,14 +1,5 @@
 [
-  {
-    "nome": "blog",
-    "descrizione": "Novita', approfondimenti e dietro le quinte"
-  },
-  {
-    "nome": "Guide",
-    "descrizione": "Istruzioni passo passo, spiegate semplici."
-  },
-  {
-    "nome": "Novità",
-    "descrizione": "Aggiornamenti e notizie dal sito."
-  }
+  {"nome": "blog", "descrizione": "Novita, approfondimenti e dietro le quinte"},
+  {"nome": "Enciclopedia", "descrizione": "Le criptovalute e le tecnologie blockchain spiegate: come funzionano, a cosa servono, quali limiti hanno."},
+  {"nome": "News", "descrizione": "Notizie e analisi dal mondo crypto: attacchi informatici, regolamentazione, mercati."}
 ]

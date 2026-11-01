@@ -1,9 +1,9 @@
 ---
 layout: single
-ref: cat-guide
-title: "Guides"
-permalink: /en/blog/guides/
-categoria: "Guides"
+ref: cat-enciclopedia
+title: "Encyclopedia"
+permalink: /en/blog/encyclopedia/
+categoria: "Encyclopedia"
 author_profile: false
 classes: wide
 lang: en

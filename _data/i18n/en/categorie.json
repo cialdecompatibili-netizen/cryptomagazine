@@ -1,14 +1,5 @@
 [
-  {
-    "nome": "blog",
-    "descrizione": "News, insights and behind the scenes"
-  },
-  {
-    "nome": "Guides",
-    "descrizione": "Step-by-step instructions, explained simply."
-  },
-  {
-    "nome": "News",
-    "descrizione": "Updates and news from the site."
-  }
+  {"nome": "blog", "descrizione": "News, insights and behind the scenes"},
+  {"nome": "Encyclopedia", "descrizione": "Cryptocurrencies and blockchain technology explained: how they work, what they are for, what their limits are."},
+  {"nome": "News", "descrizione": "News and analysis from the crypto world: cyberattacks, regulation, markets."}
 ]

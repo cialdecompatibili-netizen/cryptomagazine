@@ -1,9 +1,9 @@
 ---
 layout: single
-ref: cat-guide
-title: "Guide"
-permalink: /blog/guide/
-categoria: "Guide"
+ref: cat-news
+title: "News"
+permalink: /blog/news/
+categoria: "News"
 author_profile: false
 classes: wide
 ---
