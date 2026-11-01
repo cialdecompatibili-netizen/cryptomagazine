@@ -23,3 +23,10 @@ I link inseriti nelle note di Gemini (trmlabs.com/post/..., elliptic.co/blog/...
 - Monero: firme ad anello, indirizzi stealth, RingCT. Repo: monero-project/monero
 - Protocolli di privacy su smart contract: zk-SNARKs. Repo: iden3/circom, iden3/snarkjs. Tornado Cash: tornado-cash/tornado-core (non verificato se online)
 - Privacy Pools: prove di legittimità dei fondi senza rinunciare alla privacy (da approfondire con fonti)
+
+## Congelamento stablecoin dopo l'hack Binance (articolo pilota, 1 novembre 2026)
+
+Letti: Decrypt 382268 (https://decrypt.co/382268/secret-service-fbi-binance-hack-probe), CoinDesk (https://www.coindesk.com/business/2026/10/30/experts-divided-over-binance-hack-asset-freezes-warn-recovery-is-another-matter), American Banker (https://www.americanbanker.com/news/6b-binance-heist-provokes-stablecoin-freeze-dilemma), CryptoTicker (https://cryptoticker.io/en/tether-freeze-usdt-binance-hack-how-much-frozen/), CNBC (https://www.cnbc.com/2026/10/29/circle-tether-freeze-funds-impacted-by-potential-binance-security-issue.html), Finance Magnates (https://www.financemagnates.com/cryptocurrency/us-secret-service-joins-circle-tether-in-freezing-237b-in-binance-hack-funds/).
+Cifre divergenti: Tether USDT congelati 975,1 mln (Decrypt), 1,18 mld (CryptoTicker, on-chain), oltre 1,567 mld (annuncio Ardoino). Circle USDC 823 mln (concordi). Da riverificare quando l'indagine avanza.
+Non aperti (solo titolo visto): CoinDesk, FBI chiede di bloccare indirizzi BTC/ETH/SOL (31 ott); CoinDesk, Binance riapre prelievi a fasi (1 nov).
+
