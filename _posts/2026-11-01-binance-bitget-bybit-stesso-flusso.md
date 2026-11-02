@@ -8,8 +8,8 @@ excerpt: "Tre furti, tre exchange, un filo comune: THORChain, indirizzi riusati 
 categories:
   - News
 header:
-  image: /assets/images/blog/binance-furto.webp
-  teaser: /assets/images/blog/binance-furto.webp
+  image: /assets/images/blog/crypto-flusso-fondi.webp
+  teaser: /assets/images/blog/crypto-flusso-fondi.webp
 ---
 
 Il furto da **6,3 miliardi di dollari** a Binance ([cronaca]({{ '/blog/news/binance-attacco-hacker-6-miliardi/' | relative_url }})) non è un caso isolato per gli analisti: lo mettono in fila con Bybit e Bitget. Il motivo è che i fondi rubati sembrano seguire un percorso simile. Questo articolo mette in ordine i tre episodi e spiega quali collegamenti sono documentati e quali restano ipotesi.

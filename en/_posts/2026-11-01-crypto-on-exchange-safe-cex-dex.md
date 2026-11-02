@@ -8,8 +8,8 @@ excerpt: "What users actually lost at Binance, what analysts say about exchanges
 categories:
   - Enciclopedia
 header:
-  image: /assets/images/blog/binance-furto.webp
-  teaser: /assets/images/blog/binance-furto.webp
+  image: /assets/images/blog/crypto-exchange-sicuro.webp
+  teaser: /assets/images/blog/crypto-exchange-sicuro.webp
 ---
 
 After the **$6.3 billion** theft from Binance ([news report]({{ '/en/blog/news/binance-hack-6-billion/' | relative_url }})) many people wonder whether it still makes sense to leave crypto on an exchange. There is no single answer, but the facts of this case help. This article is informational and is not financial advice.

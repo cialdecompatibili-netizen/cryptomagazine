@@ -8,8 +8,8 @@ excerpt: "Cosa ha davvero perso chi aveva fondi su Binance, cosa dicono gli anal
 categories:
   - Enciclopedia
 header:
-  image: /assets/images/blog/binance-furto.webp
-  teaser: /assets/images/blog/binance-furto.webp
+  image: /assets/images/blog/crypto-exchange-sicuro.webp
+  teaser: /assets/images/blog/crypto-exchange-sicuro.webp
 ---
 
 Dopo il furto da **6,3 miliardi di dollari** a Binance ([cronaca]({{ '/blog/news/binance-attacco-hacker-6-miliardi/' | relative_url }})) molti si chiedono se convenga ancora lasciare le criptovalute su un exchange. Non c'è una risposta unica, ma i fatti di questo caso aiutano a ragionare. Questo articolo è informativo e non è una consulenza finanziaria.

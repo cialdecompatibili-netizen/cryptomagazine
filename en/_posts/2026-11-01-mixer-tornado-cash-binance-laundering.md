@@ -8,8 +8,8 @@ excerpt: "Tornado Cash appears in the $6.3 billion Binance theft, but not where 
 categories:
   - News
 header:
-  image: /assets/images/blog/binance-furto.webp
-  teaser: /assets/images/blog/binance-furto.webp
+  image: /assets/images/blog/mixer-riciclaggio-crypto.webp
+  teaser: /assets/images/blog/mixer-riciclaggio-crypto.webp
 tr: tradotto
 tr_hash: 113nblu
 ---

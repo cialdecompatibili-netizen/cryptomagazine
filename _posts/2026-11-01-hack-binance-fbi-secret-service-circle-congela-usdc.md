@@ -8,8 +8,8 @@ excerpt: "Dopo il furto da 6,3 miliardi a Binance, Circle e Tether hanno bloccat
 categories:
   - News
 header:
-  image: /assets/images/blog/binance-furto.webp
-  teaser: /assets/images/blog/binance-furto.webp
+  image: /assets/images/blog/hack-fbi-usdc-congelati.webp
+  teaser: /assets/images/blog/hack-fbi-usdc-congelati.webp
 ---
 
 Nelle ore successive al furto da circa **6,3 miliardi di dollari** a Binance ([la cronaca completa è qui]({{ '/blog/news/binance-attacco-hacker-6-miliardi/' | relative_url }})), la parte più rapida della risposta non è venuta dalla polizia ma da due aziende private: **Circle**, che emette la stablecoin USDC, e **Tether**, che emette USDT. Hanno bloccato sui loro token centinaia di milioni e poi miliardi di dollari legati all'attacco, mentre FBI e Secret Service affiancavano Binance nelle indagini. Questo articolo spiega cosa è stato congelato, come è tecnicamente possibile e perché la stessa cosa non si può fare con bitcoin.

@@ -8,8 +8,8 @@ excerpt: "Come una funzione di Ethereum pensata per rendere i wallet più comodi
 categories:
   - News
 header:
-  image: /assets/images/blog/binance-furto.webp
-  teaser: /assets/images/blog/binance-furto.webp
+  image: /assets/images/blog/eip-7702-piede-di-porco.webp
+  teaser: /assets/images/blog/eip-7702-piede-di-porco.webp
 ---
 
 Il 29 ottobre 2026 sono stati sottratti circa **6,3 miliardi di dollari** dai wallet di Binance su dieci blockchain ([la cronaca completa è qui]({{ '/blog/news/binance-attacco-hacker-6-miliardi/' | relative_url }})). Su Ethereum il furto è passato da una funzione chiamata **EIP-7702**: per questo molti l'hanno chiamata il "piede di porco" dell'attacco. L'immagine è efficace ma va precisata: un piede di porco serve a forzare una porta, e qui la porta era già stata aperta dall'interno. Vediamo che cosa è successo, tenendo separato ciò che è confermato da ciò che è ancora ipotesi.

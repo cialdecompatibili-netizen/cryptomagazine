@@ -8,8 +8,8 @@ excerpt: "Tornado Cash è comparso nel furto da 6,3 miliardi a Binance, ma non d
 categories:
   - News
 header:
-  image: /assets/images/blog/binance-furto.webp
-  teaser: /assets/images/blog/binance-furto.webp
+  image: /assets/images/blog/mixer-riciclaggio-crypto.webp
+  teaser: /assets/images/blog/mixer-riciclaggio-crypto.webp
 ---
 
 Dopo il furto da circa **6,3 miliardi di dollari** a Binance ([la cronaca è qui]({{ '/blog/news/binance-attacco-hacker-6-miliardi/' | relative_url }})), un nome è tornato nei titoli: **Tornado Cash**, il più noto *mixer* (protocollo di privacy) di Ethereum. Molti hanno scritto che i soldi rubati sarebbero stati "ripuliti" lì. Le fonti disponibili raccontano una storia diversa e più interessante. Questo articolo separa ciò che è documentato da ciò che è ipotesi, e spiega che cos'è un mixer senza confondere lo strumento con l'uso criminale che ne può essere fatto.

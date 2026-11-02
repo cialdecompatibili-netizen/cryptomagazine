@@ -8,8 +8,8 @@ excerpt: "He is not a hacker: he is an on-chain investigator who works from publ
 categories:
   - News
 header:
-  image: /assets/images/blog/binance-furto.webp
-  teaser: /assets/images/blog/binance-furto.webp
+  image: /assets/images/blog/investigatore-onchain.webp
+  teaser: /assets/images/blog/investigatore-onchain.webp
 ---
 
 After the roughly **$6.3 billion** theft from Binance ([our news report is here]({{ '/en/blog/news/binance-hack-6-billion/' | relative_url }})), the name that comes up most among investigators is **ZachXBT**. He is often called a "hacker", but it is the opposite: he follows stolen funds on the blockchain and publishes the evidence. This article explains who he is, what he said about the Binance case and why his analyses are taken seriously, separating facts from his own claims.

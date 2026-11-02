@@ -8,8 +8,8 @@ excerpt: "How an Ethereum feature meant to make wallets easier to use became, in
 categories:
   - News
 header:
-  image: /assets/images/blog/binance-furto.webp
-  teaser: /assets/images/blog/binance-furto.webp
+  image: /assets/images/blog/eip-7702-piede-di-porco.webp
+  teaser: /assets/images/blog/eip-7702-piede-di-porco.webp
 tr: tradotto
 tr_hash: xoefq5
 ---
