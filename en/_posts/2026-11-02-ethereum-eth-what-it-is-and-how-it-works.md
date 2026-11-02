@@ -11,6 +11,7 @@ header:
   image: /assets/images/blog/ethereum-rete-smart-contract.webp
   teaser: /assets/images/blog/ethereum-rete-smart-contract.webp
 tr: tradotto
+tr_hash: dd8jw0
 ---
 
 Ethereum is a public blockchain on which you can run programs, called smart contracts, in addition to moving digital money. It was conceived by Vitalik Buterin, who described the idea in a 2013 paper, and it has been live since July 30, 2015. Its native token is called ETH (ether) and is used to pay for operations on the network. This article explains what it is, how it works and what the risks are. It is general information, not financial advice.
