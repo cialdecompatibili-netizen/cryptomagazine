@@ -8,8 +8,8 @@ excerpt: "Ethereum is the smart contract blockchain conceived by Vitalik Buterin
 categories:
   - Encyclopedia
 header:
-  image: /assets/images/blog/eip-7702-piede-di-porco.webp
-  teaser: /assets/images/blog/eip-7702-piede-di-porco.webp
+  image: /assets/images/blog/ethereum-rete-smart-contract.webp
+  teaser: /assets/images/blog/ethereum-rete-smart-contract.webp
 tr: tradotto
 ---
 

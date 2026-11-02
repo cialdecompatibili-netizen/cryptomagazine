@@ -8,8 +8,8 @@ excerpt: "Ethereum è la blockchain degli smart contract, ideata da Vitalik Bute
 categories:
   - Enciclopedia
 header:
-  image: /assets/images/blog/eip-7702-piede-di-porco.webp
-  teaser: /assets/images/blog/eip-7702-piede-di-porco.webp
+  image: /assets/images/blog/ethereum-rete-smart-contract.webp
+  teaser: /assets/images/blog/ethereum-rete-smart-contract.webp
 ---
 
 Ethereum è una blockchain pubblica su cui si possono eseguire programmi, chiamati smart contract, oltre a trasferire denaro digitale. Fu ideata da Vitalik Buterin, che ne descrisse l'idea in un documento del 2013, ed è attiva dal 30 luglio 2015. Il suo token nativo si chiama ETH (ether) e serve a pagare le operazioni sulla rete. Questo articolo spiega cos'è, come funziona e quali sono i rischi. È un testo informativo e non una consulenza finanziaria.
