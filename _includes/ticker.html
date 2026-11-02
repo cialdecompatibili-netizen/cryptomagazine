@@ -1,39 +1,47 @@
-<!-- TICKER PREZZI (CoinGecko, client-side, aggiorna ogni 60s). Per cambiare monete: modifica l'oggetto C nello script (id coingecko : simbolo). -->
+<!-- TICKER PREZZI (CoinGecko, client-side, 60s). Formato come Decrypt: icona + simbolo + prezzo + variazione + mini grafico 7g. Monete: lista ids nello script. -->
 <div class="tk" id="tk" aria-label="Prezzi crypto"><div class="tk__t" id="tk-t"></div></div>
 <style>
-.tk{background:var(--t-nav-bg,#fff);color:var(--t-nav-text,#111);border-bottom:1px solid rgba(128,128,128,.2);overflow:hidden;white-space:nowrap;font:500 12.5px/1 system-ui,-apple-system,Segoe UI,sans-serif;font-variant-numeric:tabular-nums;height:34px;display:none}
+.tk{background:var(--t-nav-bg,#fff);color:var(--t-nav-text,#111);border-bottom:1px solid rgba(128,128,128,.2);overflow:hidden;white-space:nowrap;font:500 12.5px/1 system-ui,-apple-system,Segoe UI,sans-serif;font-variant-numeric:tabular-nums;height:46px;display:none}
 .tk.on{display:flex;align-items:center}
-.tk__t{display:inline-flex;gap:28px;padding-left:28px;animation:tk 60s linear infinite;will-change:transform}
+.tk__t{display:inline-flex;animation:tk 90s linear infinite;will-change:transform}
 .tk:hover .tk__t{animation-play-state:paused}
-.tk__i b{font-weight:700;margin-right:6px;letter-spacing:.02em}
-.tk__i span{opacity:.75;margin-right:6px}
+.tk__i{display:inline-flex;align-items:center;gap:8px;padding:0 20px;border-right:1px solid rgba(128,128,128,.2);color:inherit;text-decoration:none}
+.tk__i img{width:18px;height:18px;border-radius:50%}
+.tk__i b{font-weight:700;letter-spacing:.04em}
+.tk__p{font-size:14px;font-weight:600}
 .tk__u{color:#16a34a}.tk__d{color:#dc2626}
+.tk__i em{font-style:normal}
+.tk__i svg{width:56px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linejoin:round;stroke-linecap:round}
 @keyframes tk{to{transform:translateX(-50%)}}
 @media (prefers-reduced-motion:reduce){.tk__t{animation:none}.tk{overflow-x:auto}}
-@media (max-width:600px){.tk{font-size:12px;height:30px}.tk__t{gap:22px}}
+@media (max-width:600px){.tk{height:42px}.tk__i{padding:0 14px}.tk__i svg{width:44px}}
 </style>
 <script>
 (function(){
-  var C={bitcoin:'BTC',ethereum:'ETH',solana:'SOL',ripple:'XRP',binancecoin:'BNB',tron:'TRX',dogecoin:'DOGE',cardano:'ADA',monero:'XMR','usd-coin':'USDC'};
+  var ids='bitcoin,ethereum,solana,ripple,binancecoin,tron,dogecoin,cardano,monero,usd-coin';
   var box=document.getElementById('tk'),t=document.getElementById('tk-t');
   if(!box||!t)return;
   function f(p){return '$'+p.toLocaleString('en-US',{minimumFractionDigits:p<1?4:2,maximumFractionDigits:p<1?4:2})}
+  function sp(a){
+    if(!a||a.length<2)return '';
+    var s=a.filter(function(_,i){return i%4===0}),mn=Math.min.apply(0,s),mx=Math.max.apply(0,s),r=(mx-mn)||1;
+    return '<svg viewBox="0 0 56 20" preserveAspectRatio="none"><polyline points="'+s.map(function(v,i){return (i/(s.length-1)*56).toFixed(1)+','+(18-(v-mn)/r*16).toFixed(1)}).join(' ')+'"/></svg>';
+  }
   function draw(d){
     var h='';
-    Object.keys(C).forEach(function(k){
-      var x=d[k];if(!x)return;
-      var c=x.usd_24h_change||0,up=c>=0;
-      h+='<span class="tk__i"><b>'+C[k]+'</b><span>'+f(x.usd)+'</span><em class="'+(up?'tk__u':'tk__d')+'" style="font-style:normal">'+(up?'+':'')+c.toFixed(2)+'%</em></span>';
+    d.forEach(function(x){
+      var c=x.price_change_percentage_24h||0,up=c>=0;
+      h+='<a class="tk__i '+(up?'tk__u':'tk__d')+'" href="https://www.coingecko.com/en/coins/'+x.id+'" target="_blank" rel="noopener"><img src="'+x.image+'" alt="" loading="lazy"><b style="color:var(--t-nav-text,#111)">'+x.symbol.toUpperCase()+'</b><span class="tk__p" style="color:var(--t-nav-text,#111)">'+f(x.current_price)+'</span><em>'+(up?'+':'')+c.toFixed(2)+'%</em>'+sp(x.sparkline_in_7d&&x.sparkline_in_7d.price)+'</a>';
     });
     if(!h)return;
     t.innerHTML=h+h;box.classList.add('on');
-    try{localStorage.setItem('tk',JSON.stringify(d))}catch(e){}
+    try{localStorage.setItem('tk2',JSON.stringify(d))}catch(e){}
   }
   function load(){
-    fetch('https://api.coingecko.com/api/v3/simple/price?ids='+Object.keys(C).join(',')+'&vs_currencies=usd&include_24hr_change=true')
-      .then(function(r){return r.json()}).then(draw).catch(function(){});
+    fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids='+ids+'&order=market_cap_desc&sparkline=true&price_change_percentage=24h')
+      .then(function(r){return r.json()}).then(function(d){if(Array.isArray(d))draw(d)}).catch(function(){});
   }
-  try{var s=localStorage.getItem('tk');if(s)draw(JSON.parse(s))}catch(e){}
+  try{var s=localStorage.getItem('tk2');if(s)draw(JSON.parse(s))}catch(e){}
   load();setInterval(load,60000);
 })();
 </script>
