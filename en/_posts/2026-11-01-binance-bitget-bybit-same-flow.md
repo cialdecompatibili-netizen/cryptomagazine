@@ -10,6 +10,8 @@ categories:
 header:
   image: /assets/images/blog/crypto-flusso-fondi.webp
   teaser: /assets/images/blog/crypto-flusso-fondi.webp
+tr: tradotto
+tr_hash: 1b1g0yf
 ---
 
 For analysts, the **$6.3 billion** theft from Binance ([news report]({{ '/en/blog/news/binance-hack-6-billion/' | relative_url }})) is not an isolated case: they line it up with Bybit and Bitget. The reason is that the stolen funds seem to follow a similar path. This article puts the three episodes in order and explains which links are documented and which remain hypotheses.

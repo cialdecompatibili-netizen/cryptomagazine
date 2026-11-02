@@ -10,6 +10,8 @@ categories:
 header:
   image: /assets/images/blog/crypto-exchange-sicuro.webp
   teaser: /assets/images/blog/crypto-exchange-sicuro.webp
+tr: tradotto
+tr_hash: 12vcg2p
 ---
 
 After the **$6.3 billion** theft from Binance ([news report]({{ '/en/blog/news/binance-hack-6-billion/' | relative_url }})) many people wonder whether it still makes sense to leave crypto on an exchange. There is no single answer, but the facts of this case help. This article is informational and is not financial advice.
