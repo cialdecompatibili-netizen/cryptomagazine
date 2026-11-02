@@ -1,0 +1,39 @@
+<!-- TICKER PREZZI (CoinGecko, client-side, aggiorna ogni 60s). Per cambiare monete: modifica l'oggetto C nello script (id coingecko : simbolo). -->
+<div class="tk" id="tk" aria-label="Prezzi crypto"><div class="tk__t" id="tk-t"></div></div>
+<style>
+.tk{background:var(--t-nav-bg,#fff);color:var(--t-nav-text,#111);border-bottom:1px solid rgba(128,128,128,.2);overflow:hidden;white-space:nowrap;font:500 12.5px/1 system-ui,-apple-system,Segoe UI,sans-serif;font-variant-numeric:tabular-nums;height:34px;display:none}
+.tk.on{display:flex;align-items:center}
+.tk__t{display:inline-flex;gap:28px;padding-left:28px;animation:tk 60s linear infinite;will-change:transform}
+.tk:hover .tk__t{animation-play-state:paused}
+.tk__i b{font-weight:700;margin-right:6px;letter-spacing:.02em}
+.tk__i span{opacity:.75;margin-right:6px}
+.tk__u{color:#16a34a}.tk__d{color:#dc2626}
+@keyframes tk{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.tk__t{animation:none}.tk{overflow-x:auto}}
+@media (max-width:600px){.tk{font-size:12px;height:30px}.tk__t{gap:22px}}
+</style>
+<script>
+(function(){
+  var C={bitcoin:'BTC',ethereum:'ETH',solana:'SOL',ripple:'XRP',binancecoin:'BNB',tron:'TRX',dogecoin:'DOGE',cardano:'ADA',monero:'XMR','usd-coin':'USDC'};
+  var box=document.getElementById('tk'),t=document.getElementById('tk-t');
+  if(!box||!t)return;
+  function f(p){return '$'+p.toLocaleString('en-US',{minimumFractionDigits:p<1?4:2,maximumFractionDigits:p<1?4:2})}
+  function draw(d){
+    var h='';
+    Object.keys(C).forEach(function(k){
+      var x=d[k];if(!x)return;
+      var c=x.usd_24h_change||0,up=c>=0;
+      h+='<span class="tk__i"><b>'+C[k]+'</b><span>'+f(x.usd)+'</span><em class="'+(up?'tk__u':'tk__d')+'" style="font-style:normal">'+(up?'+':'')+c.toFixed(2)+'%</em></span>';
+    });
+    if(!h)return;
+    t.innerHTML=h+h;box.classList.add('on');
+    try{localStorage.setItem('tk',JSON.stringify(d))}catch(e){}
+  }
+  function load(){
+    fetch('https://api.coingecko.com/api/v3/simple/price?ids='+Object.keys(C).join(',')+'&vs_currencies=usd&include_24hr_change=true')
+      .then(function(r){return r.json()}).then(draw).catch(function(){});
+  }
+  try{var s=localStorage.getItem('tk');if(s)draw(JSON.parse(s))}catch(e){}
+  load();setInterval(load,60000);
+})();
+</script>
